@@ -1,0 +1,10 @@
+
+<div class="control-section">
+       <ejs-gantt id="GanttExport" #ganttExcel height="430px" [dataSource]="data" [taskFields]="taskSettings"
+           [timelineSettings]="timelineSettings" [labelSettings]="labelSettings" [treeColumnIndex]="1"
+           [allowExcelExport]="true" [allowPdfExport]="true" height="450px" [allowSelection]="true" dateFormat="MMM dd, y"
+           [projectStartDate]="projectStartDate" [projectEndDate]="projectEndDate" [highlightWeekends]="true"
+           [gridLines]="gridLines" [toolbar]="toolbar" [resourceFields] = "resourceFields"
+           [resources]="resources" (toolbarClick)="toolbarClick($event)" [splitterSettings]="splitterSettings" [columns]="columns">
+       </ejs-gantt>
+   </div>
